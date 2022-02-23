@@ -68,6 +68,8 @@ public class AddVideoActivity extends AppCompatActivity {
 
         // init actionBar
         actionBar = getSupportActionBar();
+        setTitle("Upload Video");
+
         // add back button
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
