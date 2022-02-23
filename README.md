@@ -1,5 +1,5 @@
 # Firebase-Video-App
-Android application to upload videos to firebase
+Android application to upload videos to firebase and fetch them again to show in reels format on homescreen.
 
 ### Screenshots
 
