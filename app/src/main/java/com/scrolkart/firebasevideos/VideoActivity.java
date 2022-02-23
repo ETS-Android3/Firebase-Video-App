@@ -38,6 +38,7 @@ public class VideoActivity extends AppCompatActivity {
         viewPager2 = (ViewPager2)findViewById(R.id.viewPager);
         mediaObjects = new ArrayList<>();
 
+         // For Data from firebase realtime database
         /*DatabaseReference db = FirebaseDatabase.getInstance().getReference().child("Videos");
         ValueEventListener valueEventListener = new ValueEventListener() {
             @Override
@@ -56,6 +57,7 @@ public class VideoActivity extends AppCompatActivity {
             }
         };*/
 
+        // Hard coded video example for testing purpose
         MediaObject object1 = new MediaObject("1","Big Buck Bunny","Sample Description 1","001","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4");
         MediaObject object2 = new MediaObject("2","Elephant Dream","Sample Description 2","002","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4");
         MediaObject object3 = new MediaObject("3","For Bigger Blazes","Sample Description 3","003","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4");
