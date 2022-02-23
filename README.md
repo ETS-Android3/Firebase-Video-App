@@ -7,10 +7,10 @@ Android application to upload videos to firebase
 
 |  |  |  |
 |---|---|---|
-| ![](/ss/r1.png) | ![](/ss/r2.png) | ![](/ss/r3.png) |
+| ![](./ss/r1.jpg) | ![](./ss/r2.jpg) | ![](./ss/r3.jpg) |
 
 #### Upload Video Section
 
 |  |  |  |  |
 |---|---|---|---|
-| ![](/ss/up1.png) | ![](/ss/up2.png) | ![](/ss/up3.png) | ![](/ss/up4.png) |
+| ![](./ss/up1.jpg) | ![](./ss/up2.jpg) | ![](./ss/up3.jpg) | ![](./ss/up4.jpg) |
