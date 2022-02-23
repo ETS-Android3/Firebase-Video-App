@@ -4,15 +4,17 @@ public class MediaObject {
 
     private String id;
     private String title;
+    private String description;
     private String timeStamp;
     private String url;
 
     public MediaObject() {
     }
 
-    public MediaObject(String id, String title, String timeStamp, String url) {
+    public MediaObject(String id, String title, String description, String timeStamp, String url) {
         this.id = id;
         this.title = title;
+        this.description = description;
         this.timeStamp = timeStamp;
         this.url = url;
     }
@@ -31,6 +33,14 @@ public class MediaObject {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getTimeStamp() {

@@ -43,7 +43,7 @@ public class AddVideoActivity extends AppCompatActivity {
     private ActionBar actionBar;
 
     // UI Elements
-    private EditText editText_title;
+    private EditText editText_title,editText_desc;
     private VideoView videoView;
     private Button btn_upload_video;
     private FloatingActionButton fab_pick_video;
@@ -56,7 +56,7 @@ public class AddVideoActivity extends AppCompatActivity {
     private String[] cameraPermissions;
 
     private Uri videoUri; // uri of picked video
-    private String videoTitle;
+    private String videoTitle,videoDesc;
 
     private ProgressDialog progressDialog;
 
@@ -76,6 +76,7 @@ public class AddVideoActivity extends AppCompatActivity {
 
         // initializing UI elements
         editText_title = findViewById(R.id.new_video_title);
+        editText_desc = findViewById(R.id.new_video_desc);
         videoView = findViewById(R.id.new_video_view);
         btn_upload_video = findViewById(R.id.btn_upload_video);
         fab_pick_video = findViewById(R.id.btn_pick_video);
@@ -94,7 +95,11 @@ public class AddVideoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 videoTitle = editText_title.getText().toString().trim();
+                videoDesc = editText_desc.getText().toString().trim();
+
                 if(videoTitle.isEmpty()){
+                    Toast.makeText(AddVideoActivity.this, "Title is required", Toast.LENGTH_SHORT).show();
+                }else if(videoDesc.isEmpty()){
                     Toast.makeText(AddVideoActivity.this, "Description is required", Toast.LENGTH_SHORT).show();
                 }else if(videoUri == null){
                     Toast.makeText(AddVideoActivity.this,  "Pick a video !!", Toast.LENGTH_SHORT).show();
@@ -142,6 +147,7 @@ public class AddVideoActivity extends AppCompatActivity {
                             HashMap<String,Object> hashMap = new HashMap<>();
                             hashMap.put("id",""+timeStamp);
                             hashMap.put("title",""+videoTitle);
+                            hashMap.put("description",""+videoDesc);
                             hashMap.put("timeStamp",""+timeStamp);
                             hashMap.put("url",""+downloadURL);
 
@@ -172,7 +178,7 @@ public class AddVideoActivity extends AppCompatActivity {
                     public void onFailure(@NonNull Exception e) {
                         // video upload to storage failed
                         progressDialog.dismiss();
-                        Toast.makeText(AddVideoActivity.this, "Video Upload Failed !"+"\n Try again !", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddVideoActivity.this, "Video Upload Failed !"+"\n   Try again !", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

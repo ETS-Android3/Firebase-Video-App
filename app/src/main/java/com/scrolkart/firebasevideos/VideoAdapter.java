@@ -59,7 +59,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.ViewHolder>{
             Uri videoURI = Uri.parse(mediaObject.getUrl());
             videoView.setVideoURI(videoURI);
             tv_Title.setText(mediaObject.getTitle());
-            tv_Description.setText(mediaObject.getTimeStamp());
+            tv_Description.setText(mediaObject.getDescription());
 
             videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override

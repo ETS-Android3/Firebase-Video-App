@@ -56,11 +56,11 @@ public class VideoActivity extends AppCompatActivity {
             }
         };*/
 
-        MediaObject object1 = new MediaObject("1","Big Buck Bunny","001","http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4");
-        MediaObject object2 = new MediaObject("2","Elephant Dream","002","http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4");
-        MediaObject object3 = new MediaObject("3","For Bigger Blazes","003","http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4");
-        MediaObject object4 = new MediaObject("4","For Bigger Escape","004","http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4");
-        MediaObject object5 = new MediaObject("5","For Bigger Fun","005","http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp");
+        MediaObject object1 = new MediaObject("1","Big Buck Bunny","Sample Description 1","001","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4");
+        MediaObject object2 = new MediaObject("2","Elephant Dream","Sample Description 2","002","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4");
+        MediaObject object3 = new MediaObject("3","For Bigger Blazes","Sample Description 3","003","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4");
+        MediaObject object4 = new MediaObject("4","For Bigger Escape","Sample Description 4","004","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4");
+        MediaObject object5 = new MediaObject("5","For Bigger Fun","Sample Description 5","005","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4");
         mediaObjects.add(object1);
         mediaObjects.add(object2);
         mediaObjects.add(object3);

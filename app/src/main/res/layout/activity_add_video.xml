@@ -15,16 +15,29 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:hint="Enter Title"
-        android:textSize="18dp"
         android:padding="10dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <!--    Video Description-->
+    <EditText
+        android:id="@+id/new_video_desc"
+        android:layout_below="@id/new_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="Enter Descrition"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
 
 <!--    Video Section-->
     <VideoView
         android:id="@+id/new_video_view"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_below="@+id/new_video_title"
+        android:layout_below="@+id/new_video_desc"
         android:layout_marginTop="15dp"/>
 
 <!--   Upload new Video Button -->
@@ -46,7 +59,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
         android:src="@drawable/ic_pick_video" />
 
 
