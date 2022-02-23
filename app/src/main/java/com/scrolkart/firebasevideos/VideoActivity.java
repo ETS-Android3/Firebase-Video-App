@@ -71,4 +71,6 @@ public class VideoActivity extends AppCompatActivity {
         recyclerView.setAdapter(firebaseRecyclerAdapter);
 
     }
+
+
 }
