@@ -152,6 +152,7 @@ public class AddVideoActivity extends AppCompatActivity {
                                             // video details uploaded successfully to firebase database
                                             progressDialog.dismiss();
                                             Toast.makeText(AddVideoActivity.this, "Video Uploaded 👍", Toast.LENGTH_SHORT).show();
+                                            finish();
                                         }
                                     })
                                     .addOnFailureListener(new OnFailureListener() {
