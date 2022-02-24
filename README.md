@@ -1,6 +1,12 @@
 # Firebase-Video-App
 Android application to upload videos to firebase realtime database and fetch them again to show in reels format on homescreen.
 
+### Video Samples
+
+[Sample 1](https://youtu.be/1wkwFtxZ3ac)
+
+[Sample 2](https://youtu.be/fxcCYGHMP4Q)
+
 ### Screenshots
 
 #### Homepage (Reels like section)
